@@ -9,7 +9,7 @@ Even after we added a heuristic function the route obtained to reach the end cit
 
 #### State space : All cities that are available in the city-gps.txt file. Successor function : Set of all possible cities that have a route to travel to/from the current city. Edge weight : The number of segments, distance in miles , time in hours, total delivery hours Initial state : The given start city Goal state :The given end city Heuristic function:
 
-### Haversine function as modified (used weighted) h(x) to calculate spherical distance between current city to end city. Source
+### Haversine function as modified (used weighted) h(x) to calculate spherical distance between current city to end city. <a href="https://towardsdatascience.com/heres-how-to-calculate-distance-between-2-geolocations-in-python-93ecab5bbba4" target="_blank">Source</a> 
 
 f(x) = g(x) + h(x), where f(x) = total cost to travel from the start city to a any given end city, g(x) = total cost of travelling to a current city from the start city , where the cost could be number of segments, distance, time and delivery time with chances of a mistake (it could be depending on the cost parameter that user wants) . And, h(x) = total cost to travel to the end city from the current city considering the weights on the bases of cost parameter. The heuristic is optimal as it manages to find the shortest route between two cities for a selected cost function, and it is admissible as it will never overestimate the path to the goal by finding a longer route if a shorter route is available.
 
