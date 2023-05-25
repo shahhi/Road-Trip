@@ -1,4 +1,4 @@
-# Road-Trip
+# Road-Trip navigation
 ## Finding the shortest driving route between two distant places 
 
 #### Road Trip : to find good driving directions between pairs of cities given by the user. Approach: Initially, approached the question by simply defining a fringe as PriorityQueue() with distance and start as values. And implemented modified BFS to find the shortest path to the end city, but the solution for total distance travelled was not the best route. Since we were not allowing to travel the same routes twice, we were missing out on these better routes. Added Visited city as a set to avoid this overhead.
